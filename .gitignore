@@ -25,6 +25,7 @@ local.properties
 *.iws
 
 #Gradle
+gradle/
 .gradletasknamecache
 .gradle/
 out/
