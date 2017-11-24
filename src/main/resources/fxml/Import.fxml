@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="535.0" prefWidth="965.0"
+            xmlns="http://javafx.com/javafx/8.0.141">
+    <children>
+        <Label layoutX="259.0" layoutY="68.0" prefHeight="21.0" prefWidth="362.0"
+               text="Browse a folder to import data..">
+            <font>
+                <Font name="Consolas" size="17.0"/>
+            </font>
+        </Label>
+        <JFXButton layoutX="364.0" layoutY="177.0" prefHeight="80.0" prefWidth="226.0" text="Browse..">
+            <graphic>
+                <MaterialDesignIconView glyphName="IMPORT" size="40"/>
+            </graphic>
+            <font>
+                <Font size="28.0"/>
+            </font>
+        </JFXButton>
+    </children>
+</AnchorPane>

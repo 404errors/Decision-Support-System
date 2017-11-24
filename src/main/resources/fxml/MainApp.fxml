@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.materialdesignicons.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="535.0" prefWidth="1200.0"
+            xmlns="http://javafx.com/javafx/8.0.141"
+            fx:controller="controller.MainAppController">
+    <children>
+        <AnchorPane prefHeight="535.0" prefWidth="235.0" style="-fx-background-color: #1D3030;">
+            <children>
+                <Pane prefHeight="112.0" prefWidth="235.0" style="-fx-background-color: #1D2026;">
+                    <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutY="45.0" prefWidth="235.0"
+                               text="Decision Support System" textFill="WHITE">
+                            <font>
+                                <Font name="SFNS Display Bold" size="18.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+                <Button fx:id="btnImport" alignment="BASELINE_LEFT" layoutY="110.0" onAction="#showImportScene"
+                        prefHeight="85.0" prefWidth="235.0" style="-fx-background-color: #425252;" text="Import Data"
+                        textFill="WHITE">
+                    <font>
+                        <Font name="SFNS Display Bold" size="24.0"/>
+                    </font>
+                    <graphic>
+                        <MaterialDesignIconView fill="WHITE" glyphName="IMPORT" size="30"/>
+                    </graphic>
+                </Button>
+                <Button fx:id="btnVisualize" alignment="BASELINE_LEFT" layoutY="195.0" onAction="#showVisualizeScene"
+                        prefHeight="85.0" prefWidth="235.0" style="-fx-background-color: #425252;" text="Visualize"
+                        textFill="WHITE">
+                    <font>
+                        <Font name="SFNS Display Bold" size="24.0"/>
+                    </font>
+                    <graphic>
+                        <MaterialDesignIconView fill="WHITE" glyphName="VIMEO" size="30"/>
+                    </graphic>
+                </Button>
+
+                <Button fx:id="btnPredict" alignment="BASELINE_LEFT" layoutY="280.0" onAction="#showPredictScene"
+                        prefHeight="85.0" prefWidth="235.0" style="-fx-background-color: #425252;" text="Predict"
+                        textFill="WHITE">
+                    <font>
+                        <Font name="SFNS Display Bold" size="24.0"/>
+                    </font>
+                    <graphic>
+                        <MaterialDesignIconView fill="WHITE" glyphName="WHITE_BALANCE_SUNNY" size="30"/>
+                    </graphic>
+                </Button>
+                <Button fx:id="btnAbout" alignment="BASELINE_LEFT" layoutY="365.0" onAction="#showAboutScene"
+                        prefHeight="85.0" prefWidth="235.0" style="-fx-background-color: #425252;" text="About"
+                        textFill="WHITE">
+                    <font>
+                        <Font name="SFNS Display Bold" size="24.0"/>
+                    </font>
+                    <graphic>
+                        <MaterialDesignIconView fill="WHITE" glyphName="INFORMATION" size="30"/>
+                    </graphic>
+                </Button>
+                <Button fx:id="btnExit" alignment="BASELINE_LEFT" layoutY="450.0" onAction="#exit" prefHeight="85.0"
+                        prefWidth="235.0" style="-fx-background-color: #425252;" text="Exit" textFill="WHITE">
+                    <font>
+                        <Font name="SFNS Display Bold" size="24.0"/>
+                    </font>
+                    <graphic>
+                        <MaterialDesignIconView fill="WHITE" glyphName="WINDOW_CLOSE" size="30"/>
+                    </graphic>
+                </Button>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="content" layoutX="235.0" prefHeight="535.0" prefWidth="965.0"/>
+    </children>
+</AnchorPane>

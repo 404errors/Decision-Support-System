@@ -1,0 +1,1 @@
+select T.month_name, SUM(F.total_money) as Money from  sales_fact F INNER JOIN time_dimension T ON (F.time_id = T.time_id) GROUP BY T.month_name ORDER BY T.month_number ASC;
