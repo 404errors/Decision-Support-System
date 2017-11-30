@@ -1,0 +1,12 @@
+.button:hover {
+    -fx-background-color: #4dbeff;
+}
+
+.button {
+    -fx-background-color: transparent;
+}
+
+.combo-box {
+    -fx-background-color: transparent;
+    -fx-text-alignment: center;
+}

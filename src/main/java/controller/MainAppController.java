@@ -7,7 +7,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.StackPane;
 
 import java.io.IOException;
 
@@ -17,7 +16,6 @@ public class MainAppController {
     public Button btnPredict;
     public Button btnAbout;
     public Button btnExit;
-    public StackPane contentStack;
     @FXML
     AnchorPane content;
     private ObservableList<Node> childrent;

@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.layout.AnchorPane?>
 <AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="container" prefHeight="535.0" prefWidth="965.0"
-            xmlns="http://javafx.com/javafx/8.0.141" fx:controller="controller.VisualizationController"/>
+            xmlns="http://javafx.com/javafx/8.0.141" fx:controller="controller.VisualizationController">
+   <children>
+      <AnchorPane fx:id="chartContent" layoutX="6.0" layoutY="28.0" prefHeight="500.0" prefWidth="950.0"/>
+      <ComboBox fx:id="combo_box" layoutX="742.0" layoutY="2.0" onAction="#changeChart" prefHeight="25.0"
+                prefWidth="216.0" promptText="Chọn biểu đồ"/>
+   </children>
+</AnchorPane>
