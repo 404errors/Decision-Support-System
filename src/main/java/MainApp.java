@@ -2,6 +2,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 
@@ -21,6 +22,7 @@ public class MainApp extends Application {
         stage.show();
         stage.setResizable(false);
         stage.sizeToScene();
+        stage.getIcons().add(new Image("icons/dss.png"));
     }
 
 }
